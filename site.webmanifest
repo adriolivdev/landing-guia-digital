@@ -1,0 +1,12 @@
+{
+  "name": "Empresa no Digital",
+  "short_name": "Empresa no Digital",
+  "description": "Criação de sites profissionais para empresas — uma solução da Aura Growth Tecnologia.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#5a45e0",
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}

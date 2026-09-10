@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-label="Espaço para print do site">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5f3fc"/>
+      <stop offset="1" stop-color="#efeafb"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <!-- janela de navegador -->
+  <rect x="360" y="250" width="880" height="500" rx="18" fill="#ffffff" stroke="#e2ddf3" stroke-width="2"/>
+  <rect x="360" y="250" width="880" height="64" rx="18" fill="#f3f0fb"/>
+  <circle cx="398" cy="282" r="8" fill="#d9d3ee"/>
+  <circle cx="426" cy="282" r="8" fill="#d9d3ee"/>
+  <circle cx="454" cy="282" r="8" fill="#d9d3ee"/>
+  <rect x="150" y="470" width="1300" height="1" fill="none"/>
+  <!-- ícone de imagem -->
+  <g transform="translate(760,360)" fill="none" stroke="#8b7be6" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="0" y="0" width="80" height="64" rx="8"/>
+    <circle cx="22" cy="22" r="9"/>
+    <path d="M4 60l24-24 18 16 14-12 16 14"/>
+  </g>
+  <text x="800" y="500" text-anchor="middle" font-family="'Sora',Segoe UI,Arial,sans-serif" font-size="30" font-weight="700" fill="#5a45e0">Adicionar print do site</text>
+  <text x="800" y="540" text-anchor="middle" font-family="'Inter',Segoe UI,Arial,sans-serif" font-size="20" fill="#8a83a6">Recomendado: 1600 × 1000 px (proporção 16:10)</text>
+</svg>

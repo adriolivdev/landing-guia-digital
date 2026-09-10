@@ -1,0 +1,42 @@
+/* =========================================================
+   EMPRESA NO DIGITAL — animations.css
+   Transições suaves via classes .reveal + IntersectionObserver.
+   Nunca provocam layout shift (usam apenas opacity/transform).
+   ========================================================= */
+
+/* Estado inicial dos elementos que serão revelados */
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  will-change: opacity, transform;
+  transition: opacity .6s cubic-bezier(.22,.61,.36,1), transform .6s cubic-bezier(.22,.61,.36,1);
+}
+.reveal.is-visible { opacity: 1; transform: none; }
+
+/* Variações de direção */
+.reveal--left  { transform: translateX(-22px); }
+.reveal--right { transform: translateX(22px); }
+.reveal--left.is-visible, .reveal--right.is-visible { transform: none; }
+.reveal--scale { transform: translateY(14px) scale(.98); }
+.reveal--scale.is-visible { transform: none; }
+
+/* Atraso escalonado (aplicado via data-delay no JS) */
+.reveal[data-delay] { transition-delay: var(--reveal-delay, 0ms); }
+
+/* Header ao rolar já tratado em style.css; aqui só a transição do brilho do hero */
+.hero::before { animation: heroGlow 14s ease-in-out infinite alternate; }
+@keyframes heroGlow {
+  from { opacity: .85; }
+  to   { opacity: 1; }
+}
+
+/* Respeitar preferência de redução de movimento */
+@media (prefers-reduced-motion: reduce) {
+  .reveal, .reveal--left, .reveal--right, .reveal--scale {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+  .hero::before { animation: none; }
+  * { scroll-behavior: auto !important; }
+}
