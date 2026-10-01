@@ -1,0 +1,37 @@
+{
+  "name": "adriane-site-v8",
+  "version": "8.0.0",
+  "description": "Tráfego Pago e Sites para Clínicas em SC - Adriane Oliveira",
+  "author": "Adriane Oliveira",
+  "license": "MIT",
+  "homepage": "https://empresanodigital.com.br",
+  "scripts": {
+    "dev": "http-server -p 8000 -c-1",
+    "start": "http-server -p 8000 -o",
+    "serve": "http-server .",
+    "build": "echo 'Site static - no build needed'"
+  },
+  "keywords": [
+    "tráfego pago",
+    "google ads",
+    "meta ads",
+    "sites clínicas",
+    "santa catarina",
+    "joinville",
+    "blumenau",
+    "itajaí",
+    "cro",
+    "conversão",
+    "seo local",
+    "análise dados"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adriolivdev/adriane-site-v8"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "devDependencies": {},
+  "dependencies": {}
+}
