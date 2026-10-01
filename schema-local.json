@@ -1,0 +1,233 @@
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Adriane Oliveira - Empresa no Digital",
+  "alternateName": [
+    "Empresa no Digital",
+    "Gestão de Anúncios Santa Catarina",
+    "Sites para Clínicas SC"
+  ],
+  "description": "Gestão profissional de anúncios (Google Ads, Meta Ads) e desenvolvimento de sites para clínicas e consultórios em Santa Catarina. Especialista em Joinville, Blumenau, Itajaí e região.",
+  "url": "https://empresanodigital.com.br",
+  "telephone": "+5547988393646",
+  "email": "adriadisouza@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "",
+    "addressLocality": "Santa Catarina",
+    "addressRegion": "SC",
+    "addressCountry": "BR"
+  },
+  "areaServed": [
+    {
+      "@type": "City",
+      "name": "Joinville",
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "-26.3021",
+        "longitude": "-49.2651"
+      }
+    },
+    {
+      "@type": "City",
+      "name": "Blumenau",
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "-26.8789",
+        "longitude": "-49.0677"
+      }
+    },
+    {
+      "@type": "City",
+      "name": "Itajaí",
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "-26.9177",
+        "longitude": "-48.6701"
+      }
+    },
+    {
+      "@type": "City",
+      "name": "Jaraguá do Sul",
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "-26.4839",
+        "longitude": "-49.0633"
+      }
+    },
+    {
+      "@type": "City",
+      "name": "Araquari",
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "-26.3878",
+        "longitude": "-48.8194"
+      }
+    },
+    {
+      "@type": "City",
+      "name": "Guaramirim",
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "-26.3421",
+        "longitude": "-49.3001"
+      }
+    },
+    {
+      "@type": "State",
+      "name": "Santa Catarina"
+    }
+  ],
+  "geo": {
+    "@type": "GeoShape",
+    "addressCountry": "BR",
+    "addressRegion": "SC",
+    "box": "-27.5 -50.5 -25.9 -48.3"
+  },
+  "sameAs": [
+    "https://www.instagram.com/adriolivdev/",
+    "https://www.linkedin.com/in/adriane-souza-369841247",
+    "https://www.facebook.com/adriolivdev",
+    "https://wa.me/5547988393646"
+  ],
+  "priceRange": "$$",
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "09:00",
+      "closes": "18:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Saturday",
+      "opens": "09:00",
+      "closes": "14:00"
+    }
+  ],
+  "serviceType": [
+    "Google Ads Management",
+    "Meta Ads Management",
+    "Web Development",
+    "SEO Local",
+    "CRO - Conversion Rate Optimization",
+    "Analytics & Reporting"
+  ],
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://empresanodigital.com.br/images/logo.png",
+    "width": 300,
+    "height": 300
+  },
+  "logo": {
+    "@type": "ImageObject",
+    "url": "https://empresanodigital.com.br/images/logo.png",
+    "width": 300,
+    "height": 300
+  },
+  "founder": {
+    "@type": "Person",
+    "name": "Adriane Oliveira",
+    "url": "https://www.linkedin.com/in/adriane-souza-369841247"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "Customer Service",
+    "telephone": "+5547988393646",
+    "email": "adriadisouza@gmail.com",
+    "areaServed": "SC",
+    "availableLanguage": ["Portuguese", "English"]
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5",
+    "ratingCount": "12",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "review": [
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Clínica de Exemplo"
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "reviewBody": "Excelente trabalho com nossos anúncios. Aumentamos muito o número de pacientes.",
+      "datePublished": "2026-09-15"
+    }
+  ],
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Google Ads Management",
+      "description": "Gestão profissional de campanhas Google Ads para clínicas e consultórios",
+      "priceCurrency": "BRL",
+      "priceRange": "500-2000",
+      "url": "https://empresanodigital.com.br/google-ads"
+    },
+    {
+      "@type": "Offer",
+      "name": "Meta Ads Management",
+      "description": "Gestão de campanhas Instagram, Facebook e WhatsApp Ads",
+      "priceCurrency": "BRL",
+      "priceRange": "500-2000",
+      "url": "https://empresanodigital.com.br/meta-ads"
+    },
+    {
+      "@type": "Offer",
+      "name": "Website Development",
+      "description": "Desenvolvimento de sites profissionais para clínicas",
+      "priceCurrency": "BRL",
+      "priceRange": "450-1500",
+      "url": "https://empresanodigital.com.br/sites-clinicas"
+    },
+    {
+      "@type": "Offer",
+      "name": "SEO Local",
+      "description": "Otimização para aparecer no Google Local",
+      "priceCurrency": "BRL",
+      "priceRange": "300-800",
+      "url": "https://empresanodigital.com.br/seo-local"
+    },
+    {
+      "@type": "Offer",
+      "name": "CRO - Otimização de Conversão",
+      "description": "Melhoria de taxa de conversão do site",
+      "priceCurrency": "BRL",
+      "priceRange": "400-1000",
+      "url": "https://empresanodigital.com.br/cro-otimizacao"
+    }
+  ],
+  "brand": {
+    "@type": "Brand",
+    "name": "Empresa no Digital"
+  },
+  "faxNumber": "+5547988393646",
+  "disambiguatingDescription": "Especialista em Google Ads, Meta Ads e sites para clínicas em Santa Catarina",
+  "temporalCoverage": "now/recurring",
+  "numberOfEmployees": "1",
+  "foundingDate": "2024-01-01",
+  "knowsAbout": [
+    "Digital Marketing",
+    "Google Ads",
+    "Meta Ads",
+    "Web Development",
+    "SEO",
+    "CRO",
+    "Analytics",
+    "Healthcare Marketing"
+  ],
+  "potentialAction": {
+    "@type": "ContactAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://wa.me/5547988393646"
+    }
+  }
+}

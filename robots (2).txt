@@ -1,0 +1,38 @@
+# robots.txt - Empresa no Digital
+# Gestão de Anúncios e Sites para Clínicas
+# Santa Catarina | Joinville, Blumenau, Itajaí
+
+User-agent: *
+Allow: /
+Allow: /images/
+Allow: /styles/
+Allow: /script.js
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /cache/
+Disallow: /*.pdf$
+Disallow: /*?*sort=
+Disallow: /*?*filter=
+Disallow: /search?
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+
+# Google
+User-agent: Googlebot
+Allow: /
+
+# Bing
+User-agent: Bingbot
+Allow: /
+
+# Sitemap URLs
+Sitemap: https://empresanodigital.com.br/sitemap.xml
+Sitemap: https://empresanodigital.com.br/sitemap-locations.xml
+Sitemap: https://empresanodigital.com.br/sitemap-pages.xml
+
+# Crawl delay (opcional)
+Crawl-delay: 1
+
+# Request rate (opcional)
+Request-rate: 30/60

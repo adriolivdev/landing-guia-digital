@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:mobile="http://www.mobile.googleblog.com/namespaces/mobile-sitemap/1.0"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+    <!-- Home -->
+    <url>
+        <loc>https://empresanodigital.com.br/</loc>
+        <lastmod>2026-10-01T12:00:00+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+        <image:image>
+            <image:loc>https://empresanodigital.com.br/images/logo.png</image:loc>
+            <image:title>Logo Empresa no Digital</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://empresanodigital.com.br/images/hero-03-trafico.jpg</image:loc>
+            <image:title>Gestão de Tráfego Pago Google Ads e Meta Ads</image:title>
+        </image:image>
+    </url>
+
+    <!-- Sobre -->
+    <url>
+        <loc>https://empresanodigital.com.br/#sobre</loc>
+        <lastmod>2026-10-01T12:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Serviços -->
+    <url>
+        <loc>https://empresanodigital.com.br/#servicos</loc>
+        <lastmod>2026-10-01T12:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Google Ads -->
+    <url>
+        <loc>https://empresanodigital.com.br/google-ads</loc>
+        <lastmod>2026-10-01T12:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Meta Ads -->
+    <url>
+        <loc>https://empresanodigital.com.br/meta-ads</loc>
+        <lastmod>2026-10-01T12:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Sites para Clínicas -->
+    <url>
+        <loc>https://empresanodigital.com.br/sites-clinicas</loc>
+        <lastmod>2026-10-01T12:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+
+    <!-- SEO Local -->
+    <url>
+        <loc>https://empresanodigital.com.br/seo-local</loc>
+        <lastmod>2026-10-01T12:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- CRO / Otimização -->
+    <url>
+        <loc>https://empresanodigital.com.br/cro-otimizacao</loc>
+        <lastmod>2026-10-01T12:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Analytics -->
+    <url>
+        <loc>https://empresanodigital.com.br/analytics</loc>
+        <lastmod>2026-10-01T12:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.75</priority>
+    </url>
+
+    <!-- Modelos de Sites -->
+    <url>
+        <loc>https://empresanodigital.com.br/#models</loc>
+        <lastmod>2026-10-01T12:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+
+    <!-- Modelo Odontologia -->
+    <url>
+        <loc>https://empresanodigital.com.br/modelo-odontologia</loc>
+        <lastmod>2026-10-01T12:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.75</priority>
+    </url>
+
+    <!-- Modelo Medicina -->
+    <url>
+        <loc>https://empresanodigital.com.br/modelo-medicina</loc>
+        <lastmod>2026-10-01T12:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.75</priority>
+    </url>
+
+    <!-- Modelo Estética -->
+    <url>
+        <loc>https://empresanodigital.com.br/modelo-estetica</loc>
+        <lastmod>2026-10-01T12:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.75</priority>
+    </url>
+
+    <!-- Modelo Fisioterapia -->
+    <url>
+        <loc>https://empresanodigital.com.br/modelo-fisioterapia</loc>
+        <lastmod>2026-10-01T12:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.75</priority>
+    </url>
+
+    <!-- Modelo Psicologia -->
+    <url>
+        <loc>https://empresanodigital.com.br/modelo-psicologia</loc>
+        <lastmod>2026-10-01T12:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.75</priority>
+    </url>
+
+    <!-- Modelo Nutrição -->
+    <url>
+        <loc>https://empresanodigital.com.br/modelo-nutricao</loc>
+        <lastmod>2026-10-01T12:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.75</priority>
+    </url>
+
+    <!-- Equipe / Especialista -->
+    <url>
+        <loc>https://empresanodigital.com.br/#equipe</loc>
+        <lastmod>2026-10-01T12:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+        <image:image>
+            <image:loc>https://empresanodigital.com.br/images/adriane-foto-profissional.jpg</image:loc>
+            <image:title>Adriane Oliveira - Especialista em Gestão de Anúncios</image:title>
+        </image:image>
+    </url>
+
+    <!-- FAQ -->
+    <url>
+        <loc>https://empresanodigital.com.br/faq</loc>
+        <lastmod>2026-10-01T12:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Contato -->
+    <url>
+        <loc>https://empresanodigital.com.br/#localizacao</loc>
+        <lastmod>2026-10-01T12:00:00+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Política de Privacidade -->
+    <url>
+        <loc>https://empresanodigital.com.br/privacidade</loc>
+        <lastmod>2026-10-01T12:00:00+00:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <!-- Termos de Serviço -->
+    <url>
+        <loc>https://empresanodigital.com.br/termos</loc>
+        <lastmod>2026-10-01T12:00:00+00:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+</urlset>

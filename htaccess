@@ -1,0 +1,189 @@
+# ========== CONFIGURAÇÕES SEO E PERFORMANCE ==========
+# .htaccess - Empresa no Digital
+
+# Habilitar mod_rewrite
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+    # HTTPS redirect (descomente se necessário)
+    # RewriteCond %{HTTPS} off
+    # RewriteRule ^(.*)$ https://empresanodigital.com.br/$1 [R=301,L]
+
+    # WWW redirect (descomente para forçar www)
+    # RewriteCond %{HTTP_HOST} ^empresanodigital\.com\.br [NC]
+    # RewriteRule ^(.*)$ https://www.empresanodigital.com.br/$1 [R=301,L]
+
+    # Remove arquivo index.html de URLs
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ index.html [QSA,L]
+
+    # Bloquear acesso a arquivos sensíveis
+    RewriteRule ^\.env$ - [F]
+    RewriteRule ^\.git$ - [F]
+    RewriteRule ^composer.json$ - [F]
+    RewriteRule ^package.json$ - [F]
+
+</IfModule>
+
+# ========== COMPRESSÃO GZIP ==========
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html
+    AddOutputFilterByType DEFLATE text/plain
+    AddOutputFilterByType DEFLATE text/xml
+    AddOutputFilterByType DEFLATE text/css
+    AddOutputFilterByType DEFLATE text/javascript
+    AddOutputFilterByType DEFLATE application/xml
+    AddOutputFilterByType DEFLATE application/xhtml+xml
+    AddOutputFilterByType DEFLATE application/rss+xml
+    AddOutputFilterByType DEFLATE application/javascript
+    AddOutputFilterByType DEFLATE application/x-javascript
+    AddOutputFilterByType DEFLATE application/x-font-ttf
+    AddOutputFilterByType DEFLATE application/x-font-woff
+    AddOutputFilterByType DEFLATE image/svg+xml
+</IfModule>
+
+# ========== CACHE DO NAVEGADOR ==========
+<IfModule mod_expires.c>
+    ExpiresActive On
+
+    # HTML
+    ExpiresByType text/html "access plus 1 hour"
+
+    # CSS e JavaScript
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType text/javascript "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+
+    # Imagens
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+    ExpiresByType image/x-icon "access plus 1 year"
+
+    # Fontes
+    ExpiresByType font/ttf "access plus 1 year"
+    ExpiresByType font/otf "access plus 1 year"
+    ExpiresByType font/woff "access plus 1 year"
+    ExpiresByType font/woff2 "access plus 1 year"
+    ExpiresByType application/x-font-woff "access plus 1 year"
+
+    # PDF
+    ExpiresByType application/pdf "access plus 1 month"
+
+    # Padrão
+    ExpiresDefault "access plus 2 days"
+</IfModule>
+
+# ========== CACHE CONTROLE HEADERS ==========
+<IfModule mod_headers.c>
+    # Cache para arquivos estáticos
+    <FilesMatch "\.(jpg|jpeg|png|gif|ico|css|js|svg|woff|woff2|ttf|eot)$">
+        Header set Cache-Control "max-age=31536000, public"
+        Header set Expires "Thu, 31 Dec 2027 23:59:59 GMT"
+        Header unset ETag
+        Header set Pragma "public"
+    </FilesMatch>
+
+    # Sem cache para HTML
+    <FilesMatch "\.(html|htm|php)$">
+        Header set Cache-Control "max-age=3600, must-revalidate"
+        Header unset ETag
+    </FilesMatch>
+
+    # Headers de segurança
+    Header set X-UA-Compatible "IE=edge"
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set X-XSS-Protection "1; mode=block"
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+
+    # CORS para fontes
+    <FilesMatch "\.(ttf|ttc|otf|eot|woff|woff2|font.css)$">
+        Header set Access-Control-Allow-Origin "*"
+    </FilesMatch>
+</IfModule>
+
+# ========== BLOQUEIO DE ACESSO ==========
+# Bloqueio de backup files
+<FilesMatch "\.(bak|config|sql|fla|psd|ini|log|sh|inc|swp|dist)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Bloqueio de diretórios sensíveis
+<Directory ~ "\.(git|svn)">
+    Order allow,deny
+    Deny from all
+</Directory>
+
+<Directory "/private">
+    Order allow,deny
+    Deny from all
+</Directory>
+
+<Directory "/cache">
+    Order allow,deny
+    Deny from all
+</Directory>
+
+<Directory "/temp">
+    Order allow,deny
+    Deny from all
+</Directory>
+
+# ========== TIPOS MIME ==========
+<IfModule mod_mime.c>
+    AddType application/javascript .js
+    AddType application/x-javascript .js
+    AddType text/css .css
+    AddType text/html .html .htm
+    AddType text/plain .txt
+    AddType image/svg+xml .svg
+    AddType application/x-font-woff .woff
+    AddType application/x-font-woff2 .woff2
+    AddType application/x-font-ttf .ttf
+    AddType application/x-font-otf .otf
+    AddType application/x-font-eot .eot
+    AddType application/rss+xml .rss
+    AddType application/atom+xml .atom
+    AddCharset UTF-8 *.css
+    AddCharset UTF-8 *.html
+    AddCharset UTF-8 *.js
+    AddCharset UTF-8 *.xml
+</IfModule>
+
+# ========== ETAGS ==========
+<IfModule mod_headers.c>
+    Header unset ETag
+</IfModule>
+FileETag None
+
+# ========== REDIRECIONAMENTOS PERMANENTES (301) ==========
+# Exemplo: redirecionar página antiga para nova
+# RewriteRule ^old-page\.html$ /new-page.html [R=301,L]
+
+# ========== RESTRIÇÕES DE ACESSO ==========
+# Bloquear bots ruins
+SetEnvIf Request_URI ".*" good_request=1
+SetEnvIf User-Agent "MJ12bot" bad_request=1
+SetEnvIf User-Agent "AhrefsBot" bad_request=1
+SetEnvIf User-Agent "SemrushBot" bad_request=1
+<Directory />
+    Order allow,deny
+    Allow from env=good_request
+    Deny from env=bad_request
+</Directory>
+
+# ========== VARIAÇÃO DE CONTEÚDO ==========
+<IfModule mod_setenvif.c>
+    SetEnvIf Request_URI ".*" content_disposition=inline
+</IfModule>
+
+# ========== ENABLE HTTP/2 ==========
+<IfModule mod_http2.c>
+    Protocols h2 http/1.1
+</IfModule>
